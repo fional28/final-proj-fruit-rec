@@ -10,8 +10,11 @@ This project was developed on Nvidia's Jetson Nano, using a retrained resnet18 m
 
 ## Running this project
 1. Connect to your Jetson Nano.
-2. Ensure all necessary files are installed (resnet18.onnx, labels.txt, etc.)
-3. 
+2. Check that necessary applications are installed (PuTTY, VSCode, etc.)
+3. Ensure all necessary files are installed (resnet18.onnx, labels.txt, etc.)
+4. In PuTTY, cd into jetson-inference/python/training/classification.
+5. Set the NET and DATASET variables: NET=models/finalproject-apples and DATASET=data/finalproject-apples for apples or NET=models/finalproject-oranges and DATASET=data/finalproject-oranges for oranges.
+6. For a sample image, run imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/fresh-apples/01.png testing01.png (after setting the NET and DATASET variables for apples). Alternatively, upload your own image into VSCode and run by replacing the parameters in the command.
 
 [View a video explanation here](video link)
 
