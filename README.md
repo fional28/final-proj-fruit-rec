@@ -16,8 +16,6 @@ This project was developed on Nvidia's Jetson Nano, using a retrained resnet18 m
 5. Set the NET and DATASET variables: NET=models/finalproject-apples and DATASET=data/finalproject-apples for apples or NET=models/finalproject-oranges and DATASET=data/finalproject-oranges for oranges.
 6. For a sample image, run imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/fresh-apples/01.png testing01.png (after setting the NET and DATASET variables for apples). Alternatively, upload your own image into VSCode and run by replacing the parameters in the command.
 
-[View a video explanation here](video link)
-
 ## Sources
 https://www.hindawi.com/journals/jfq/2022/4661108/#conclusion 
 https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification
